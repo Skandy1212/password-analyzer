@@ -49,11 +49,13 @@ bash
 Copy
 pip install Flask scikit-learn transformers numpy pandas joblib python-dateutil   
 Download the RockYou dataset (place in data/rockyou.txt).
+
 https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt
 
 Run the app:
 
 bash
+
 Copy
 python app.py
 Open http://localhost:8000 in your browser.
@@ -65,6 +67,7 @@ password-analyzer/
 ├── models/                 # Trained ML models  
 │   ├── nn_model.joblib     # Similarity model  
 │   └── vectorizer.joblib   # TF-IDF vectorizer  
+
 🤖 How It Works
 Input: User submits a password via web UI or API.
 
@@ -78,12 +81,11 @@ Estimates crack time
 
 Output: Returns strength score, vulnerabilities, and AI suggestions.
 
-Architecture Diagram
-
 📊 Performance Metrics
 Password	Entropy (bits)	Time-to-Crack	Strength Score
 password123	18	<1 second	10
 Xq2$9z!L	68	5 years	95
+
 🌐 API Usage
 bash
 Copy
@@ -97,6 +99,7 @@ Response:
   "suggestions": ["5uMM3r#2024*Q", "Summer!Tide$2024"],  
   "vulnerabilities": ["Common phrase", "Low entropy (28 bits)"]  
 }  
+
 📜 License
 MIT License - See LICENSE.
 
