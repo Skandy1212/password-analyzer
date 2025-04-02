@@ -47,14 +47,15 @@ Install dependencies:
 
 bash
 Copy
-pip install -r requirements.txt  # Sample requirements: flask scikit-learn transformers numpy pandas  
+pip install Flask scikit-learn transformers numpy pandas joblib python-dateutil   
 Download the RockYou dataset (place in data/rockyou.txt).
+https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt
 
 Run the app:
 
 bash
 Copy
-python app.py  
+python app.py
 Open http://localhost:8000 in your browser.
 
 📂 Project Structure
